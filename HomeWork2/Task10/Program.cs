@@ -19,5 +19,5 @@
      } 
     }
 }
-int num = new Random().Next(0,10);
+int num = new Random().Next(0,1000);
 digitals(num);
