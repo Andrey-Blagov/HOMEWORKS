@@ -1,4 +1,4 @@
-﻿static bool IsPalindrome(int number)
+﻿/*static bool IsPalindrome(int number)
 {
     int number1 = new Random().Next(10000, 100000);
     //Console.Write("Insert 5-digit number: ");
@@ -26,4 +26,4 @@
         }
 }
 bool result = IsPalindrome(number);
-System.Console.WriteLine($"{result}");
+System.Console.WriteLine($"{result}");*/
