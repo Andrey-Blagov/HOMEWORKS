@@ -74,18 +74,19 @@
 //46  ->  нет
 //161 ->  да
 
-//bool CheckMultiplicity(int num)
-//{
-   // if(num % 7 == 0 && num % 23 == 0)
-   // {
-   //     return true;
-   // }
-   // else
-   // {
-   //     return false;
-   // }
-//}
-//Console.WriteLine("Input number");
-//int num1 = Convert.ToInt32(Console.ReadLine());
-//Console.WriteLine($"{num1} -> {CheckMultiplicity(num1)}");
+bool CheckMultiplicity(int num)
+{
+   if(num % 7 == 0 && num % 23 == 0)
+   {
+     return true;
+   }
+   else
+   {
+     return false;
+   }
+}
+Console.WriteLine("Input number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"{num1} -> {CheckMultiplicity(num1)}");
+
 
