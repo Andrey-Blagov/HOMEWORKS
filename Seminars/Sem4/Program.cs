@@ -91,8 +91,8 @@ System.Console.WriteLine(GetSumNumbers(n)); */
 
 int FindFactorial(int n)
 {
-    int fact = 0;
-    for (int i = 1; i <= fact; i++)
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
     {
       fact *= i;
     }
@@ -104,3 +104,16 @@ int n = Convert.ToInt32(Console.ReadLine());
 //System.Console.WriteLine(GetSumNumbers(n));
 System.Console.WriteLine(FindFactorial(n));
 
+/* int GetFactorial(int num)
+{
+    int sum = 1;
+    for (int i = 1; i <= num; i++)
+    {
+        sum *= i;
+    }
+    return sum;
+}
+//Console.WriteLine(GetSumNumbers(10));
+System.Console.Write("Input N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(GetFactorial(n)); */
