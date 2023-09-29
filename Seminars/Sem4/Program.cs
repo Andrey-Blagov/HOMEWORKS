@@ -9,7 +9,7 @@
 /* int DigitCount(int num)
 {
     int count = 0;    
-    for (int i = 1; num > 10; i++)
+    for (int i = 1; num > 0; i++)
     {
        num /= 10;
        count = i;
@@ -20,7 +20,7 @@
 
 System.Console.Write("Input num: ");
 int num = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(DigitCount(int num)); */
+System.Console.WriteLine(DigitCount(num)); */
 
 
 
@@ -89,7 +89,7 @@ System.Console.WriteLine(GetSumNumbers(n)); */
 4  -> 24
 5  -> 120 */
 
-int FindFactorial(int n)
+/* int FindFactorial(int n)
 {
     int fact = 1;
     for (int i = 1; i <= n; i++)
@@ -102,7 +102,7 @@ int FindFactorial(int n)
 System.Console.Write("Input N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 //System.Console.WriteLine(GetSumNumbers(n));
-System.Console.WriteLine(FindFactorial(n));
+System.Console.WriteLine(FindFactorial(n)); */
 
 /* int GetFactorial(int num)
 {
