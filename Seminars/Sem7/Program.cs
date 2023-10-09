@@ -120,14 +120,14 @@ void Fill2DArray(int[,] array, int minValue, int maxValue)
 }
 
 void ChangeArray(int[,] array)
-{  
-    for (int i = 0; i < array.GetLength(0); i++)  
-    {    for (int j = 0; j < array.GetLength(1); j++)   
-     {      if (i % 2 == 0 && j % 2 == 0)      
-     {        array[i, j] *= array[i, j];      
-     }    
-     }  
-     }
+{  
+    for (int i = 0; i < array.GetLength(0); i++) 
+    {   for (int j = 0; j < array.GetLength(1); j++)  
+     {      if (i % 2 == 0 && j % 2 == 0)     
+     {        array[i, j] *= array[i, j];      
+     }    
+     }  
+     }
      }
 
 int rows = InputInteger("Введите количество строк: ");
@@ -136,7 +136,7 @@ int min = InputInteger("Введите минимальное значение �
 int max = InputInteger("Введите максимальное значение диапазона: ");
 int[,] arr = Create2DArray(rows, columns);
 Fill2DArray(arr, min, max);
-Print2DArray(arr); */ */
+Print2DArray(arr); */
 
 
 /* Задача 51: Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
@@ -146,7 +146,7 @@ Print2DArray(arr); */ */
 8 4 2 4
 Сумма элементов главной диагонали: 1+9+2 = 12 */
 
-int FindMinimum(int[,] array)
+/* int FindMinimum(int[,] array)
 {
     if (array.GetLength(0) < array.GetLength(1)) 
         return array.GetLength(0);
@@ -164,7 +164,7 @@ int GetSumMainDiagonal(int[,] array)
     }
 
     return sum;
-}
+} */
 
 
 /* int GetMinSize(int[,] ints)
