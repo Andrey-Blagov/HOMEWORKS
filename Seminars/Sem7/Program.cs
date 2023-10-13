@@ -19,8 +19,14 @@ void Fill2DArray(int[,] array, int minValue, int maxValue)
 {
     Random random = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
-        for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = random.Next(minValue, maxValue + 1);
+    {
+       for (int j = 0; j < array.GetLength(1); j++)
+       {
+         array[i, j] = random.Next(minValue, maxValue + 1);
+       }
+           
+    }
+        
 }
 
 void Print2DArray(int[,] array)
@@ -39,8 +45,8 @@ int min = InputInteger("Введите минимальное значение �
 int max = InputInteger("Введите максимальное значение диапазона: ");
 int[,] arr = Create2DArray(rows, columns);
 Fill2DArray(arr, min, max);
-Print2DArray(arr); */
-
+Print2DArray(arr);
+ */
 
 
 /* Задача 48: Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле: Aₘₙ = m+n. Выведите полученный массив на экран.
@@ -171,3 +177,31 @@ int GetSumMainDiagonal(int[,] array)
 {
     return ints.GetLength(0) < ints.GetLength(1) ? ints.GetLength(0) : ints.GetLength(1);
 } */
+
+
+
+public static int[] FindNumberByPosition (int [,] matrix, int rowPosition, int columnPosition)
+     {// Введите свое решение ниже          
+    
+       if ( x < 0 || y < 0 || x >= matrix.GetLength(0) || y >= matrix.GetLength(1))
+       {
+           return new int[] { 0 };
+       }
+       else
+       {
+          int[] result = { matrix[x, y], 0 };
+          return result;
+       }
+     }
+
+public static void PrintCheckIfError (int[] results, int X, int Y)
+     {// Введите свое решение ниже
+       if (result = 0)
+       {
+         System.Console.Write($"There is no such index");
+       }
+       else 
+       {
+         System.Console.Write($"The number in [{x}, {y}] is {result}");                     
+       }
+
