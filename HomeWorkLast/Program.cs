@@ -48,3 +48,18 @@ for (int i = 0; i < n; i++)
     Console.WriteLine(i + "[" + string.Join(", ", array) + "]");
 }
 
+
+
+
+for(int i = 0; i < matrix.GetLength(0); i++)
+      {
+           for(int j = 0; j < matrix.GetLength(1) + 1; j++)
+           {
+                if(matrix[i, j] > matrix[i, j - 1])
+                {
+                     int temp = matrix[i, j];
+                     matrix[i, j] = matrix[i, j - 1];
+                     matrix[i, j - 1] = temp;
+                 }
+           }
+      }
