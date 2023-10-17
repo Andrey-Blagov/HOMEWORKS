@@ -180,7 +180,7 @@ int GetSumMainDiagonal(int[,] array)
 
 
 
-public static int[] FindNumberByPosition (int [,] matrix, int rowPosition, int columnPosition)
+/* public static int[] FindNumberByPosition (int [,] matrix, int rowPosition, int columnPosition)
      {// Введите свое решение ниже          
     
        if ( x < 0 || y < 0 || x >= matrix.GetLength(0) || y >= matrix.GetLength(1))
@@ -203,5 +203,5 @@ public static void PrintCheckIfError (int[] results, int X, int Y)
        else 
        {
          System.Console.Write($"The number in [{x}, {y}] is {result}");                     
-       }
+       } */
 
